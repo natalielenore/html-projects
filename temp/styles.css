@@ -30,6 +30,7 @@ input[type=number] {
 	text-align: center;
 	border:0;
 	font-family: Staatliches, sans-serif;
+	outline: none;
 
 }
 
