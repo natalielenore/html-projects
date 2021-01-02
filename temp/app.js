@@ -3,7 +3,7 @@ const fahrenheitInput = document.querySelector('#fahrenheit > input');
 const kelvinInput = document.querySelector('#kelvin > input');
 
 function roundNum(num) {
-	return Math.round(num*100)/100
+	return Math.round(num*100)/100;
 
 }
 
