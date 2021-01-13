@@ -28,6 +28,7 @@ function convertToWord(letter) {
 			return 'Scissors';
 		}
 }
+// hiiii
 
 function win(user, comp) {
 	userScore++;
