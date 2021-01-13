@@ -22,6 +22,7 @@ header > h1 {
 	font-family: Indie Flower, sans-serif;
 }
 
+
 .scoreboard {
 	border: 3px solid white;
 	margin: 20px auto;
@@ -78,7 +79,7 @@ header > h1 {
 
 
 .choice {
-	border: 2px solid #339900;
+	border: 2px solid white;
 	border-radius: 50%;
 	margin: 0 15px;
 	padding: 10px;
@@ -88,7 +89,7 @@ header > h1 {
 }
 .choice:hover {
 	cursor: pointer;
-	background: #339900;
+	background: white;
 }
 
 #action-message {
@@ -101,6 +102,21 @@ header > h1 {
 }
 
 
+
+.green-glow {
+	border: 4px solid #4dcc7d !important;
+	box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+	border: 4px solid #fc121b;
+	box-shadow: 0 0 10px #d01116;
+}
+
+.gray-glow {
+	border: 4px solid #464647;
+	box-shadow: 0 0 10px #25292b;
+}
 
 
 
