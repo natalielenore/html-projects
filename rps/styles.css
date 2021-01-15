@@ -14,7 +14,6 @@ body {
 
 header{
 	background: white;
-	/*padding: 0 0 0 0;*/
 }
 
 header > h1 {
@@ -24,9 +23,7 @@ header > h1 {
 	font-size: 125px;
 }
 
-
 .scoreboard {
-
 	width: 200px;
 	height: 70px;
 	margin: 110px auto 0 auto;
@@ -38,15 +35,11 @@ header > h1 {
 }
 
 .badge {
-	/*background: #742B99;*/
+	width: 100px;
 	color: black;
 	font-size: 48px;
-	/*padding: 1px 5px;*/
 	font-family: VT323, sans-serif;
-	/*border-radius: 4px;*/
-	width: 100px;
 	text-align: center;
-
 }
 
 #user-label {
@@ -59,7 +52,6 @@ header > h1 {
 	position: absolute;
 	top: -53px;
 	right: 0px;
-
 }
 
 #user-score {
@@ -74,46 +66,36 @@ header > h1 {
 	top: 0px;
 	left: 0px;
 }
+
 #comp-score {
+	width: 100px;
 	padding: 10px 0 10px 0;
-	
 	border: 2px solid black;
 	border-left-width: 1px;
-	/*float: right;*/
-	width: 100px;
 	background-color: white;
-	position: absolute;
 	top: 0px;
 	right: 0px;
+	position: absolute;
 }
-
-
 
 .result {
 	font-size: 30px;
 	color: black;
-	/*background-color: white;*/
 	width: auto;
 	height: 60px;
 	margin: 40px auto 20px auto;
 	padding: 0 0 8px 0;
-
-
-
 }
 
 .result > p {
 	text-align: center;
 	font-family: VT323, sans-serif;
-	/*font-weight: bold;*/
-
 }
 
 .choices {
 	margin: 45px 0;
 	text-align: center;
 }
-
 
 .choice {
 	border: 2px solid black;
@@ -122,12 +104,11 @@ header > h1 {
 	padding: 10px;
 	display: inline-block;
 	transition: all .1s ease;
-
 }
+
 .choice:hover {
 	cursor: pointer;
 	background: white;
-
 }
 
 #action-message {
@@ -138,8 +119,6 @@ header > h1 {
 	font-family: Playfair Display, sans-serif;
 	margin-top: 20px;
 }
-
-
 
 .green-glow {
 	border: 2px solid #4dcc7d;
