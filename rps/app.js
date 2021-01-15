@@ -34,10 +34,12 @@ function win(user, comp) {
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	compScore_span.innerHTML = compScore;
-	user = convertToWord(user);
-	comp = convertToWord(comp);
-	result_p.innerHTML = `${user} beats ${comp}. You win!`;
+	userWord = convertToWord(user);
+	compWord = convertToWord(comp);
+	result_p.innerHTML = `${userWord} beats ${compWord}. You win!`;
+	
 	document.getElementById(user).classList.add('green-glow');
+
 
 }
 
@@ -45,17 +47,17 @@ function lose(user, comp) {
 	compScore++;
 	userScore_span.innerHTML = userScore;
 	compScore_span.innerHTML = compScore;
-	user = convertToWord(user);
-	comp = convertToWord(comp);
-	result_p.innerHTML = comp + " beats " + user + ". You lose :(";
+	userWord = convertToWord(user);
+	compWord = convertToWord(comp);
+	result_p.innerHTML = compWord + " beats " + userWord + ". You lose :(";
 
 }
 
 
 function draw(user, comp) {
-	user = convertToWord(user);
-	comp = convertToWord(comp);
-	result_p.innerHTML = user + " is the same as " + comp + ". It's a draw!";
+	userWord = convertToWord(user);
+	compWord = convertToWord(comp);
+	result_p.innerHTML = userWord + " is the same as " + compWord + ". It's a draw!";
 
 }
 
