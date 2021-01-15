@@ -21,11 +21,11 @@ function getComputerChoice() {
 function convertToWord(letter) {
 	switch (letter) {
 		case 'r':
-			return 'Rock';
+			return 'rock';
 		case 'p':
-			return 'Paper';
+			return 'paper';
 		case 's':
-			return 'Scissors';
+			return 'scissors';
 		}
 }
 // hiiii
@@ -36,12 +36,14 @@ function win(user, comp) {
 	compScore_span.innerHTML = compScore;
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = `${userWord} beats ${compWord}. You win!`;
+	result_p.innerHTML = `${userWord} beats ${compWord} YOU WIN`;
 	
 	document.getElementById(user).classList.add('green-glow');
-
+	setTimeout(function() {document.getElementById(user).classList.remove('green-glow')}, 1000); 
 
 }
+
+
 
 function lose(user, comp) {
 	compScore++;
@@ -49,7 +51,9 @@ function lose(user, comp) {
 	compScore_span.innerHTML = compScore;
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = compWord + " beats " + userWord + ". You lose :(";
+	result_p.innerHTML = compWord + " beats " + userWord + " YOU LOSE";
+	document.getElementById(user).classList.add('red-glow');
+	setTimeout(function() {document.getElementById(user).classList.remove('red-glow')}, 1000); 
 
 }
 
@@ -57,7 +61,9 @@ function lose(user, comp) {
 function draw(user, comp) {
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = userWord + " is the same as " + compWord + ". It's a draw!";
+	result_p.innerHTML = userWord + " vs " + compWord + " IT'S A DRAW";
+	document.getElementById(user).classList.add('gray-glow');
+	setTimeout(function() {document.getElementById(user).classList.remove('gray-glow')}, 1000); 
 
 }
 
