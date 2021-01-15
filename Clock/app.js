@@ -1,8 +1,4 @@
 	
-
-
-
-
 function clock() {
 
 	const fullDate = new Date();
@@ -20,14 +16,10 @@ function clock() {
 		secs = "0"+secs;
 	}
 
-	// if (hours > 12) {
-	// 	hours = hours - 12;
-	// }
 
-
-	document.getElementById('hour').innerHTML = hours;
-	document.getElementById('minute').innerHTML = ":" + mins;
-	document.getElementById('second').innerHTML = ":" + secs;
+	document.getElementById('hour1').innerHTML = hours;
+	document.getElementById('minute1').innerHTML = mins;
+	document.getElementById('second1').innerHTML = secs;
 
 
 }
