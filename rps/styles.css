@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap');
 
-
-@font-face{
- font-family: digital-clock-font;
- src: url('https://dl.dafont.com/dl/?f=ds_digital');
-}
 
 * {
 	margin: 0;
@@ -27,34 +20,45 @@ header{
 header > h1 {
 	color: #E9EAE5;
 	text-align: center;
-	font-family: Bebas Neue, sans-serif;
-	font-size: 150px;
+	font-family: VT323, sans-serif;
+	font-size: 125px;
 }
 
 
 .scoreboard {
-	
-	margin: 110px auto 40px auto;
+
 	width: 200px;
-	height: 100px;
-	color: black;
+	height: 70px;
+	margin: 110px auto 0 auto;
+	color: red;
 	font-size: 46px;
-	font-family: Major Mono Display, sans-serif;
+	font-family: VT323, sans-serif;
 	text-align: center;
-	/*padding: 15px 20px;*/
-	/*border-radius: 4px;*/
 	position: relative;
 }
 
 .badge {
 	/*background: #742B99;*/
 	color: black;
-	font-size: 50px;
-	padding: 2px 10px;
-	font-family: Bebas Neue, sans-serif;
+	font-size: 48px;
+	/*padding: 1px 5px;*/
+	font-family: VT323, sans-serif;
 	/*border-radius: 4px;*/
 	width: 100px;
-	
+	text-align: center;
+
+}
+
+#user-label {
+	position: absolute;
+	top: -53px;
+	left: 0px;
+}
+
+#computer-label {
+	position: absolute;
+	top: -53px;
+	right: 0px;
 
 }
 
@@ -83,25 +87,15 @@ header > h1 {
 	right: 0px;
 }
 
-#user-label {
-	position: absolute;
-	top: -55px;
-	left: 0px;
-}
 
-#computer-label {
-	position: absolute;
-	top: -55px;
-	right: 0px;
-
-}
 
 .result {
 	font-size: 30px;
 	color: black;
-	background-color: white;
-	width: 650px;
-	margin: 20px auto 100px auto;
+	/*background-color: white;*/
+	width: auto;
+	height: 60px;
+	margin: 40px auto 20px auto;
 	padding: 0 0 8px 0;
 
 
@@ -110,13 +104,13 @@ header > h1 {
 
 .result > p {
 	text-align: center;
-	font-family: Playfair Display, sans-serif;
+	font-family: VT323, sans-serif;
 	/*font-weight: bold;*/
 
 }
 
 .choices {
-	margin: 50px 0;
+	margin: 45px 0;
 	text-align: center;
 }
 
@@ -127,7 +121,7 @@ header > h1 {
 	margin: 0 15px;
 	padding: 10px;
 	display: inline-block;
-	transition: all .2s ease;
+	transition: all .1s ease;
 
 }
 .choice:hover {

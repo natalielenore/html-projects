@@ -36,10 +36,10 @@ function win(user, comp) {
 	compScore_span.innerHTML = compScore;
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = `${userWord} beats ${compWord} YOU WIN`;
+	result_p.innerHTML = `${userWord} beats ${compWord}<br />YOU WIN!`;
 	
 	document.getElementById(user).classList.add('green-glow');
-	setTimeout(function() {document.getElementById(user).classList.remove('green-glow')}, 1000); 
+	setTimeout(() => document.getElementById(user).classList.remove('green-glow'), 300); 
 
 }
 
@@ -51,9 +51,9 @@ function lose(user, comp) {
 	compScore_span.innerHTML = compScore;
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = compWord + " beats " + userWord + " YOU LOSE";
+	result_p.innerHTML = compWord + " beats " + userWord + "<br />YOU LOSE";
 	document.getElementById(user).classList.add('red-glow');
-	setTimeout(function() {document.getElementById(user).classList.remove('red-glow')}, 1000); 
+	setTimeout(function() {document.getElementById(user).classList.remove('red-glow')}, 300); 
 
 }
 
@@ -61,9 +61,9 @@ function lose(user, comp) {
 function draw(user, comp) {
 	userWord = convertToWord(user);
 	compWord = convertToWord(comp);
-	result_p.innerHTML = userWord + " vs " + compWord + " IT'S A DRAW";
+	result_p.innerHTML = userWord + " vs " + compWord + "<br />IT'S A DRAW";
 	document.getElementById(user).classList.add('gray-glow');
-	setTimeout(function() {document.getElementById(user).classList.remove('gray-glow')}, 1000); 
+	setTimeout(function() {document.getElementById(user).classList.remove('gray-glow')}, 300); 
 
 }
 
