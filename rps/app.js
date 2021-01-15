@@ -28,7 +28,7 @@ function convertToWord(letter) {
 			return 'scissors';
 		}
 }
-// hiiii
+
 
 function win(user, comp) {
 	userScore++;
@@ -40,7 +40,6 @@ function win(user, comp) {
 	
 	document.getElementById(user).classList.add('green-glow');
 	setTimeout(() => document.getElementById(user).classList.remove('green-glow'), 300); 
-
 }
 
 
@@ -53,8 +52,7 @@ function lose(user, comp) {
 	compWord = convertToWord(comp);
 	result_p.innerHTML = compWord + " beats " + userWord + "<br />YOU LOSE";
 	document.getElementById(user).classList.add('red-glow');
-	setTimeout(function() {document.getElementById(user).classList.remove('red-glow')}, 300); 
-
+	setTimeout(() => document.getElementById(user).classList.remove('red-glow'), 300); 
 }
 
 
@@ -63,8 +61,7 @@ function draw(user, comp) {
 	compWord = convertToWord(comp);
 	result_p.innerHTML = userWord + " vs " + compWord + "<br />IT'S A DRAW";
 	document.getElementById(user).classList.add('gray-glow');
-	setTimeout(function() {document.getElementById(user).classList.remove('gray-glow')}, 300); 
-
+	setTimeout(() => document.getElementById(user).classList.remove('gray-glow'), 300); 
 }
 
 
@@ -91,28 +88,17 @@ function game(userChoice) {
 		case "ss":
 			draw(userChoice, compChoice);
 			break;
-
 	}
-
-
 }
 
 
 function main() {
-	rock_div.addEventListener('click', function() {
-		game("r");
-	})
+	rock_div.addEventListener('click', () => game("r"));
 
-	paper_div.addEventListener('click', function() {
-		game("p");
-	})
+	paper_div.addEventListener('click', () => game("p"));
 
-	scissors_div.addEventListener('click', function() {
-		game("s");
-	})
+	scissors_div.addEventListener('click', () => game("s"));
 }
-
-
 
 
 main();
