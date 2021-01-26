@@ -4,10 +4,16 @@
 	font-family: sans-serif;
 	font-size: 12px;
 	box-sizing: border-box;
+	
+}
+
+body {
+	background-color: #909BDA;
+
 }
 
 .container {
-	background-color: #909BDA;
+	/*background-color: #909BDA;*/
 	padding: 15px;
 }
 
@@ -19,7 +25,7 @@ header {
 
 h1 {
 	font-size: 30px;
-	color: white;
+
 	background-color: white;
 	color: black;
 	border-radius: 7px;
@@ -32,8 +38,6 @@ h1 {
 .col {
 	width: calc(50% - 16px);
 	float:left;
-	/*padding: 13px;*/
-	/*border: 5px solid #D600FF;*/
 	margin: 8px;
 	background-color: white;
 	color: black;
@@ -56,6 +60,7 @@ h1 {
 }
 
 .boxes::after {
+
 	content: '';
 	display: table;
 	clear: both;
