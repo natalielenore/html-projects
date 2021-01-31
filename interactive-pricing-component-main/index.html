@@ -23,17 +23,26 @@
 
     <div class="boxes">
       <div class="pageviews">
-        <span id="pv-num">142</span>
-        <span>Pageviews</span>
+        <span id="pv-num"></span>
+        <span id="pv">Pageviews</span>
       </div>
 
       <div class="cost">
         <span id="dollars">$16.00</span>
-        <span class="smallgray">/month</span>
+        <span class="smallgray">/ month</span>
       </div>
     </div>
 
-    <div class="scale">scale</div>
+    <div class="slider">
+      <!-- 
+      10K pageviews / $8 per month
+      50K pageviews / $12 per month
+      100K pageviews / $16 per month
+      500k pageviews / $24 per month
+      1M pageviews / $36 per month -->
+
+      <input type="range" min="10" max="1000" value="100" id="myRange">
+    </div>
 
     <div>
 
@@ -55,6 +64,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Natalie Graham</a>.
   </div>
+
+  <script>src="app.js" charset="utf-8"></script>
 </body>
 </html>
 
