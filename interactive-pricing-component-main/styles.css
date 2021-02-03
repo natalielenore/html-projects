@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+	margin: 20px auto;
+	}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 * {
@@ -25,6 +29,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 200px;
+	padding: 8px 0 0 0;
 /*	background-color: pink;*/
 	
 }
@@ -293,4 +298,15 @@ button {
 	display: table;
 	clear: both;
 }
+
+/*TO DO*/
+/*filler color for slider*/
+/*make mobile compatible */
+/*hover states for slider */
+
+
+
+
+
+
 
