@@ -111,23 +111,23 @@ slider.oninput = function() {
 	  //     100K pageviews / $16 per month
 	  //     500k pageviews / $24 per month
 	  //     1M pageviews / $36 per month -->
-			case cur == 0:
+			case cur < 100:
 				output.innerHTML = "10K";
 				monies.innerHTML = "$8.00";
 				break;
-			case cur == 1:
+			case cur < 200:
 				output.innerHTML = "50K";
 				monies.innerHTML = "$12.00";
 				break;
-			case cur == 2:
+			case cur < 300:
 				output.innerHTML = "100K";
 				monies.innerHTML = "$16.00";
 				break;
-			case cur == 3:
+			case cur < 400:
 				output.innerHTML = "500K";
 				monies.innerHTML = "$24.00";
 				break;
-			case cur == 4:
+			case cur == 400:
 				output.innerHTML = "1M";
 				monies.innerHTML = "$36.00";
 				break;

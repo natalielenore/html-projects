@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+
+
+
+.wrapper {
+	width: 100%;
+}
+
 .attribution { 
 	font-size: 11px; 
 	text-align: center; 
 	margin: 20px auto;
 	}
+
 .attribution a { color: hsl(228, 45%, 44%); }
 
 * {
@@ -24,6 +32,7 @@ body {
 
 
 .heading {
+	width: 100%;
 	margin: 35px auto 0 auto;
 	background: url("images/pattern-circles.svg");
 	background-repeat: no-repeat;
@@ -265,7 +274,7 @@ ul li {
 
 
 hr {
-	width: 540px;
+	width: 100%;
 	position: absolute;
 	left: 0;
 	background-color: #ECF0FB;
@@ -298,6 +307,24 @@ button {
 	display: table;
 	clear: both;
 }
+
+
+
+@media only screen and (max-device-width: 500px) {
+
+	.container {
+		width: calc(100% - 40px)
+		/*margin: 20px;*/
+		/*background-color: red;*/
+	}
+
+	.pageviews {
+		clear:both;
+	}
+}
+
+
+
 
 /*TO DO*/
 /*filler color for slider*/
