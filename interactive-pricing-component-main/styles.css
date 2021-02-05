@@ -11,6 +11,7 @@
 	font-size: 11px; 
 	text-align: center; 
 	margin: 20px auto;
+	position: relative;
 	}
 
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -225,6 +226,10 @@ input:checked + .slider1:before {
   transform: translateX(20px);
 }
 
+.slider1:hover {
+	background-color: #7AEADF;
+}
+
 /* Rounded sliders */
 .slider1.round {
   border-radius: 34px;
@@ -297,7 +302,7 @@ button {
 	height: 41px;
 	width: 170px;
   border: none;
-  color: white;
+  color: hsl(225, 20%, 60%);
   background-color: #293356;
   text-align: center;
   text-decoration: none;
@@ -308,6 +313,10 @@ button {
   border-radius: 20px;
   font-weight: 800;
   float: right;
+}
+
+button:hover {
+	color: white;
 }
 
 
@@ -379,6 +388,10 @@ button {
 	vertical-align: middle;
 	margin: 0 4px 0 0;*/
 	
+	}
+
+	.slider {
+		margin: auto;
 	}
 }
 
