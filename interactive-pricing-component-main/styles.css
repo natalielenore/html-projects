@@ -126,6 +126,13 @@ body {
 	margin: 60px 0 30px 0;
 }
 
+#mobile {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
 
 #myRange {
 	margin: 25px auto;
@@ -306,7 +313,7 @@ button {
   background-color: #293356;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+/*  display: inline-block;*/
   font-size: 12px;
   margin: 15px auto;
   cursor: pointer;
@@ -346,7 +353,7 @@ button:hover {
 		width: 90%;
 		/*padding: 20px 10px;*/
 		/*margin: auto;*/
-		height: 500px;
+		height: 478px;
 
 
 		padding: 20px;
@@ -393,6 +400,52 @@ button:hover {
 	.slider {
 		margin: auto;
 	}
+	#list {
+		float: none;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		display: inline;
+	}
+
+	ul li {
+	text-align: center;
+	list-style-image: url("images/icon-check.svg");
+	font-size: 12px;
+	text-indent: 8px;
+
+
+
+	}
+
+	ul {
+		display: inline;
+		align-content: center;
+	}
+
+
+	button {
+		float: none;
+		margin: auto;
+		
+
+	}
+	.discount {
+		width: 40px;
+	}
+	#browser {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	#mobile {
+		display: inline;
+		position: static;
+	}
+
+
 }
 
 
