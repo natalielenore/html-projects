@@ -59,7 +59,6 @@ body {
 	border-radius: 8px;
 	padding: 50px 48px 20px 48px;
 	position: relative;
-	box-shadow: 0 10px 20px -5px #E9E9F8;
 }
 
 
@@ -236,7 +235,7 @@ progress {
 #mobile {
 		display: none;
 		position: absolute;
-		right: 0;
+		left: 0;
 		top: 0;
 	}
 
@@ -248,8 +247,11 @@ progress {
   width: 100%;
   height: 8px;
   border-radius: 4px;
+<<<<<<< HEAD
   color: red;
 
+=======
+>>>>>>> parent of 6f72605... fixed everything but the slider
   background: hsl(224, 65%, 95%);
   outline: none;
   
@@ -289,6 +291,7 @@ progress {
 
 }
 
+<<<<<<< HEAD
 
 
 #myRange {
@@ -315,6 +318,8 @@ progress {
   );
 }*/
 
+=======
+>>>>>>> parent of 6f72605... fixed everything but the slider
 
 
 .switch {
@@ -493,7 +498,7 @@ button:hover {
 		height: 478px;
 
 
-		padding: 20px 24px;
+		padding: 20px;
 		/*background-color: red;*/
 	}
 
@@ -511,9 +516,7 @@ button:hover {
 		margin: auto;
 		align-content: center;
 		position: static;
-		/*width: 200px;*/
-		margin: 10px auto;
-
+		width: 200px;
 
 	}
 
@@ -523,7 +526,6 @@ button:hover {
 	float: none;
 	/*vertical-align: middle;*/
 	position: static;
-	margin: 13px auto 35px auto;
 
 	}
 
@@ -553,7 +555,6 @@ button:hover {
 	list-style-image: url("images/icon-check.svg");
 	font-size: 12px;
 	text-indent: 8px;
-	margin: 0 0 10px 0;
 
 
 
@@ -562,18 +563,12 @@ button:hover {
 	ul {
 		display: inline;
 		align-content: center;
-		text-align: center;
-		list-style-position: inside;
-
 	}
 
-	.parent {
-		position: relative;
-	}
 
 	button {
 		float: none;
-		margin: 18px 0 0 0;
+		margin: auto;
 		
 
 	}
@@ -588,39 +583,9 @@ button:hover {
 	}
 
 	#mobile {
-		display: block;
-		position: absolute;
-		right: -45px;
-		top: 0px;
-		margin:0;
-
+		display: inline;
+		position: static;
 	}
-
-	#discount-section {
-		float: none;
-		margin: 20px auto 38px auto;
-		position: relative;
-
-	}
-
-	.discount {
-		float: none;
-
-	}
-
-	.float-right {
-		float: none;
-		margin: none;
-	}
-
-	.switch {
-		margin: 0;
-	}
-
-	#bottom-section {
-		padding: 25px 0 0 0;
-	}
-
 
 
 }

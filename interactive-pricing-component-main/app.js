@@ -36,10 +36,10 @@ function change_values(discount, cur) {
 			dis = "$27.00";
 			break;
 		}
-		
+		console.log(discount)
 		
 		if (discount) {
-			
+			console.log("hi")
 			monies.innerHTML = dis;
 		}
 }
