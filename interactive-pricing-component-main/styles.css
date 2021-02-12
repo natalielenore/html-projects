@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 
@@ -59,6 +62,7 @@ body {
 	border-radius: 8px;
 	padding: 50px 48px 20px 48px;
 	position: relative;
+	box-shadow: 0 10px 20px -5px #E9E9F8;
 }
 
 
@@ -102,105 +106,6 @@ body {
 	vertical-align: middle;
 }*/
 
-.slider {
-	width: 100%;
-
-
-
-
-}
-
-
-
-
-
-#myRange {
-
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	-webkit-appearance: none;
-	outline: none;
-	border: none;
-	height: 3px;
-	width: 100%;
-	/*background: red;*/
-
-
-
-	}
-
-
-
-#myRange::-webkit-slider-thumb {
-	-webkit-appearance: none;
-
-	background: blue;
-	border-radius: 50%;
-}
-
-progress {
-  -webkit-appearance: none;
-}
-
-#myRange::-webkit-progress-bar {
-  background-color: orange;
-}
-
-#myRange::-webkit-progress-inner-element {
-	background: orange;
-
-}
-
-
-
-#myRnage::-ms-tooltip {
-  display: none;
-}
-
-#myRange::-moz-range-progress {
-	background-color: blue;
-}
-
-
-    
-/*#myRange::-webkit-slider-runnable-track {
-      height: 10px;
-      -webkit-appearance: none;
-      color: #13bba4;
-      /*margin-top: -1px;
-    }*/
-/*    
-#myRange::-webkit-slider-thumb {
-	width: 40px;
-	height: 40px;
-      -webkit-appearance: none;*/
-      /*cursor: ew-resize;*/
-/*      background: #434343;
-      box-shadow: -80px 0 0 100% #43e5f7;
-    }
-
-
-
-#myRange::-ms-fill-lower {
-  background: yellow;
-  border-radius: 2px;
-}*/
-
-
-/*IE & Edge right side*/
-
-#myRange::-ms-fill-upper {
-  background: green;
-  border-radius: 2px;
-}
-
-
-
-
-
 .cost {
 	font-size: 16px;
 	font-weight: 600;
@@ -228,10 +133,9 @@ progress {
 #mobile {
 		display: none;
 		position: absolute;
-		left: 0;
+		right: 0;
 		top: 0;
-	}*/
-
+	}
 
 
 #myRange {
@@ -240,10 +144,7 @@ progress {
   width: 100%;
   height: 8px;
   border-radius: 4px;
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 6f72605... fixed everything but the slider
+  /*background: hsl(224, 65%, 95%);*/
   background: hsl(224, 65%, 95%);
   outline: none;
   
@@ -267,8 +168,6 @@ progress {
 
 }
 
-
-
 #myRange::-moz-range-thumb {
   width: 40px;
   height: 25px;
@@ -277,15 +176,11 @@ progress {
 }
 
 #myRange::-webkit-slider-thumb:hover {
-	background: #24AEA1;
+	/*background: #24AEA1;*/
 	opacity: 100;
 	background-color: #24AEA1;
 
 }
-
-<<<<<<< HEAD
-
-
 
 #myRange {
   --webkitProgressPercent: 0%;
@@ -313,8 +208,8 @@ progress {
 
 
 
-=======
->>>>>>> parent of 6f72605... fixed everything but the slider
+
+/*dfsdfdsfsd*/
 
 .switch {
   position: relative;
@@ -373,7 +268,7 @@ input:checked + .slider1:before {
 	background-color: #7AEADF;
 }
 
- Rounded sliders 
+/* Rounded sliders */
 .slider1.round {
   border-radius: 34px;
 }
@@ -382,7 +277,7 @@ input:checked + .slider1:before {
   border-radius: 50%;
 }
 
-
+/*dfsdfsdfsdfs*/
 
 .discount {
 	font-size: 10px;
@@ -492,7 +387,7 @@ button:hover {
 		height: 478px;
 
 
-		padding: 20px;
+		padding: 20px 24px;
 		/*background-color: red;*/
 	}
 
@@ -510,7 +405,9 @@ button:hover {
 		margin: auto;
 		align-content: center;
 		position: static;
-		width: 200px;
+		/*width: 200px;*/
+		margin: 10px auto;
+
 
 	}
 
@@ -520,6 +417,7 @@ button:hover {
 	float: none;
 	/*vertical-align: middle;*/
 	position: static;
+	margin: 13px auto 35px auto;
 
 	}
 
@@ -549,6 +447,7 @@ button:hover {
 	list-style-image: url("images/icon-check.svg");
 	font-size: 12px;
 	text-indent: 8px;
+	margin: 0 0 10px 0;
 
 
 
@@ -557,12 +456,18 @@ button:hover {
 	ul {
 		display: inline;
 		align-content: center;
+		text-align: center;
+		list-style-position: inside;
+
 	}
 
+	.parent {
+		position: relative;
+	}
 
 	button {
 		float: none;
-		margin: auto;
+		margin: 18px 0 0 0;
 		
 
 	}
@@ -577,9 +482,39 @@ button:hover {
 	}
 
 	#mobile {
-		display: inline;
-		position: static;
+		display: block;
+		position: absolute;
+		right: -45px;
+		top: 0px;
+		margin:0;
+
 	}
+
+	#discount-section {
+		float: none;
+		margin: 20px auto 38px auto;
+		position: relative;
+
+	}
+
+	.discount {
+		float: none;
+
+	}
+
+	.float-right {
+		float: none;
+		margin: none;
+	}
+
+	.switch {
+		margin: 0;
+	}
+
+	#bottom-section {
+		padding: 25px 0 0 0;
+	}
+
 
 
 }
@@ -589,6 +524,11 @@ button:hover {
 
 /*TO DO*/
 /*filler color for slider*/
+/*make mobile compatible */
+/*hover states for slider */
+
+
+
 
 
 
