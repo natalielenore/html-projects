@@ -112,7 +112,7 @@ body {
 
 
 
-/*
+
 
 #myRange {
 
@@ -130,11 +130,11 @@ body {
 
 
 
-	/*}*/
+	}
 
 
 
-/*#myRange::-webkit-slider-thumb {
+#myRange::-webkit-slider-thumb {
 	-webkit-appearance: none;
 
 	background: blue;
@@ -158,19 +158,13 @@ progress {
 
 #myRnage::-ms-tooltip {
   display: none;
-}*/
+}
 
-/*#myRange::-moz-range-progress {
+#myRange::-moz-range-progress {
 	background-color: blue;
 }
-*/
-/*
-#myRange {
-      /*overflow: hidden;*/
-      /*width: 80px;
-      -webkit-appearance: none;
-      background-color: #9a905d;
-    }*/
+
+
     
 /*#myRange::-webkit-slider-runnable-track {
       height: 10px;
@@ -198,12 +192,11 @@ progress {
 
 /*IE & Edge right side*/
 
-/*#myRange::-ms-fill-upper {
+#myRange::-ms-fill-upper {
   background: green;
   border-radius: 2px;
-}*/
+}
 
-/*
 
 
 
@@ -247,11 +240,7 @@ progress {
   width: 100%;
   height: 8px;
   border-radius: 4px;
-<<<<<<< HEAD
-  color: red;
 
-=======
->>>>>>> parent of 6f72605... fixed everything but the slider
   background: hsl(224, 65%, 95%);
   outline: none;
   
@@ -285,14 +274,14 @@ progress {
 }
 
 #myRange::-webkit-slider-thumb:hover {
-	/*background: #24AEA1;
+	background: #24AEA1;
 	opacity: 100;
 	background-color: #24AEA1;
 
 }
 
 
-<<<<<<< HEAD
+
 
 #myRange {
   --webkitProgressPercent: 0%;
@@ -319,9 +308,7 @@ progress {
 }
 
 
-=======
-/*dfsdfdsfsd*/
->>>>>>> parent of 6f72605... fixed everything but the slider
+
 
 .switch {
   position: relative;
@@ -380,7 +367,7 @@ input:checked + .slider1:before {
 	background-color: #7AEADF;
 }
 
-/* Rounded sliders 
+ Rounded sliders 
 .slider1.round {
   border-radius: 34px;
 }
@@ -389,7 +376,7 @@ input:checked + .slider1:before {
   border-radius: 50%;
 }
 
-/*dfsdfsdfsdfs*/
+
 
 .discount {
 	font-size: 10px;
@@ -596,8 +583,7 @@ button:hover {
 
 /*TO DO*/
 /*filler color for slider*/
-/*make mobile compatible */
-/*hover states for slider */
+
 
 
 
