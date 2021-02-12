@@ -103,6 +103,112 @@ body {
 	vertical-align: middle;
 }*/
 
+.slider {
+	width: 100%;
+
+
+
+
+}
+
+
+
+
+
+#myRange {
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+	height: 3px;
+	width: 100%;
+	/*background: red;*/
+
+
+
+	}
+
+
+
+#myRange::-webkit-slider-thumb {
+	-webkit-appearance: none;
+
+	background: blue;
+	border-radius: 50%;
+}
+
+progress {
+  -webkit-appearance: none;
+}
+
+#myRange::-webkit-progress-bar {
+  background-color: orange;
+}
+
+#myRange::-webkit-progress-inner-element {
+	background: orange;
+
+}
+
+
+
+#myRnage::-ms-tooltip {
+  display: none;
+}
+
+/*#myRange::-moz-range-progress {
+	background-color: blue;
+}
+*/
+/*
+#myRange {
+      /*overflow: hidden;*/
+      /*width: 80px;
+      -webkit-appearance: none;
+      background-color: #9a905d;
+    }*/
+    
+/*#myRange::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      /*margin-top: -1px;
+    }*/
+    
+#myRange::-webkit-slider-thumb {
+	width: 40px;
+	height: 40px;
+      -webkit-appearance: none;
+      /*cursor: ew-resize;*/
+      background: #434343;
+      box-shadow: -80px 0 0 100% #43e5f7;
+    }
+
+
+
+#myRange::-ms-fill-lower {
+  background: yellow;
+  border-radius: 2px;
+}
+
+
+/*IE & Edge right side*/
+
+#myRange::-ms-fill-upper {
+  background: green;
+  border-radius: 2px;
+}
+
+
+
+
+
+
 .cost {
 	font-size: 16px;
 	font-weight: 600;
@@ -135,13 +241,15 @@ body {
 	}
 
 
+/*
 #myRange {
 	margin: 25px auto;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;
   width: 100%;
   height: 8px;
   border-radius: 4px;
-  /*background: hsl(224, 65%, 95%);*/
+  color: red;
+
   background: hsl(224, 65%, 95%);
   outline: none;
   
@@ -165,6 +273,8 @@ body {
 
 }
 
+
+
 #myRange::-moz-range-thumb {
   width: 40px;
   height: 25px;
@@ -173,11 +283,13 @@ body {
 }
 
 #myRange::-webkit-slider-thumb:hover {
-	/*background: #24AEA1;*/
+	/*background: #24AEA1;
 	opacity: 100;
 	background-color: #24AEA1;
 
 }
+
+
 
 #myRange {
   --webkitProgressPercent: 0%;
@@ -201,12 +313,9 @@ body {
     red var(--webkitProgressPercent),
     var(--webkitProgressPercent)
   );
-}
+}*/
 
 
-
-
-/*dfsdfdsfsd*/
 
 .switch {
   position: relative;
