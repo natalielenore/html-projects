@@ -5,6 +5,19 @@ var checkbox = document.getElementById("check");
 
 
 
+document.getElementById("myRange").oninput = function () {
+    var value = ((this.value - this.min) / (this.max - this.min)) * 100;
+    this.style.background =
+        "linear-gradient(to right, var(--soft_cyan) 0%, var(--soft_cyan) " +
+        value +
+        "%, var(--light_gray_blue) " +
+        value +
+        "%, var(--light_gray_blue) 100%)";
+
+};
+
+
+
 
 function change_values(discount, cur) {
 
