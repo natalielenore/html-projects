@@ -25,6 +25,10 @@
 
 }
 
+body {
+	background: #FAFAFA;
+}
+
 h1 {
 	font-size: 56px;
 	line-height: 64px;
@@ -57,20 +61,33 @@ h3 {
 
 #body-2 {
 	font-size: 16px;
-	line-height: 28px;
-	text-align: left;
+	line-height: 50px;
+
+	
 
 }
 
+button {
+	margin: 30px 0 0 0;
+}
+
+
+
 #hero {
+	margin: 40px auto 50px auto;
+	
 
 }
 
 #hero-text {
+	text-align: left;
+	width: 50%;
+	float: left;
 
 }
 
 #hero-title {
+	margin: 0 0 30px 0;
 
 }
 
@@ -78,16 +95,21 @@ h3 {
 
 }
 
-.button {
 
-}
 
 #hero-button {
 
 }
 
-#hero-graphics {
-
+#hero-graphic {
+	text-anchor: left;
+	float: right;
+	background-image: url("./assets/home/illustration-charts.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: red;*/
+	width: 50%;
+	height: 620px;
 }
 
 #module-section {
@@ -100,9 +122,19 @@ h3 {
 	width: 350px;
 	height: 508px;
 	background-color: var(--light-gray);
-	margin: 0 20px 0 0
-	padding: 10px;
+	margin: 0 30px 0 0;
+	padding: 43px;
+	border-radius: 20px;
+	background: white;
 
+}
+
+.module > h1 {
+	text-align: center;
+}
+
+.module > h2 {
+	margin: 0 0 49px 0;
 }
 
 #mod-1 {
@@ -110,20 +142,31 @@ h3 {
 }
 
 #mod-2 {
-	
+	background-color: var(--dark-blue);
+	color: white;
+}
+
+#mod-2 > h1{
+	color: white;
+}
+
+#mod-2 > h2{
+	color: white;
+}
+
+#mod-2 > #body-2{
+	color: white;
 }
 
 #mod-3 {
 	
 }
 
-#title-mod {
-
-}
 
 
 
-#price-detail-mod {
+.price-detail-mod {
+	margin: 0 0 20px 0;
 
 }
 
@@ -148,7 +191,18 @@ h3 {
 
 }
 
+#footer {
+	background: var(--dark-gray);
+}
 
+
+
+.boxes::after {
+
+	content: '';
+	display: table;
+	clear: both;
+}
 
 
 
